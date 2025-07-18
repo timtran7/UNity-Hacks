@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Respectful Message Checker</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Kindly: A Message Safety Checker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Respectful Message Checker</h1>
-    <textarea id="message" placeholder="Type your message here..." rows="5"></textarea>
-    <button onclick="checkMessage()">Check Message</button>
-    <div id="result"></div>
-  </div>
+
+  <h2>🧠 Kindly: A Message Safety Checker</h2>
+  <p>Check your message for explicit words before posting.</p>
+
+  <textarea id="message" rows="4" placeholder="Type your message here..."></textarea><br>
+  <button onclick="checkMessage()">Check Message</button>
+
+  <div id="result"></div>
+  <div id="score"></div>
+  <progress id="toneMeter" value="100" max="100"></progress>
+
+  <div id="preview"></div>
   <script src="badwords.js"></script>
   <script src="script.js" defer></script>
 </body>
