@@ -12,11 +12,13 @@ function removeOuterPunctuation(word) {
   return word;
 }
 function clearMessage() {
-  document.getElementById("message").value="";
+  document.getElementById("message").value = "";
   document.getElementById("result").innerHTML = "";
   document.getElementById("score").innerHTML = "";
   document.getElementById("toneMeter").value = 100;
-  document.getElementById("toneMeter").style.setProperty("accent-color", "green");
+  document
+    .getElementById("toneMeter")
+    .style.setProperty("accent-color", "green");
   document.getElementById("preview").innerHTML = "";
 }
 function checkMessage() {
@@ -58,11 +60,15 @@ function checkMessage() {
     resultEl.style.backgroundColor = "#e7fce9";
     resultEl.style.color = "green";
   } else if (flagged.length <= 2) {
-    resultEl.innerHTML = `⚠️ Warning: Found questionable words: ${flagged.join(", ")}`;
+    resultEl.innerHTML = `⚠️ Warning: Found questionable words: ${flagged.join(
+      ", "
+    )}`;
     resultEl.style.backgroundColor = "#fff9e6";
     resultEl.style.color = "#b95e00";
   } else {
-    resultEl.innerHTML = `❌ Message might be hurtful. Please use different words: ${flagged.join(", ")}`;
+    resultEl.innerHTML = `❌ Message might be hurtful. Please use different words: ${flagged.join(
+      ", "
+    )}`;
     resultEl.style.backgroundColor = "#fde8e8";
     resultEl.style.color = "#c0392b";
   }
