@@ -1,1 +1,2 @@
 # YCS-Code-for-Safety
+#Kindly is a simple, kid-friendly web app that helps users check their messages for harmful or inappropriate words before sending them. The file where I created my list of explicit words is not shown in this repository due to the explicit content. To run it locally, clone the repository and add a file named badwords.js with a list called badwords with all the words from bad-words.txt by CMU CS(https://www.cs.cmu.edu/~biglou/resources/bad-words.txt).  
