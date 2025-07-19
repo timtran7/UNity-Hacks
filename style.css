@@ -59,6 +59,12 @@ progress {
   padding: 2px 4px;
   border-radius: 3px;
 }
+#customword{
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
 
 #preview {
   margin-top: 20px;
